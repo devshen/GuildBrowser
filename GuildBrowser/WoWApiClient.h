@@ -12,12 +12,12 @@ typedef void (^ErrorBlock)(NSError *error);
 
 + (WoWApiClient *)sharedClient;
 
--(void)guildWithName:(NSString *)guildName
+- (void)guildWithName:(NSString *)guildName
              onRealm:(NSString *)realmName
              success:(GuildBlock)successBlock
                error:(ErrorBlock)errorBlock;
 
--(void)characterWithName:(NSString *)characterName
+- (void)characterWithName:(NSString *)characterName
                  onRealm:(NSString *)realmName
                  success:(CharacterBlock)successBlock
                    error:(ErrorBlock)errorBlock;
