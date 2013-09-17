@@ -193,6 +193,7 @@
     _guildName = settings.guildName.text;
     
     NSLog(@"%@ %@",settings.guildName.text, settings.realmName.text);
+    
 //    _settingsPopoverController = nil;
     
     [self reloadCharactersFromRealm:_realmName guildName:_guildName];
